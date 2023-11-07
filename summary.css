@@ -1,0 +1,50 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Kanit-Medium.ttf);
+}
+@media print {
+    #nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    audio{
+        display: none;
+    }
+    figure{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    #figure{
+        display: none;
+    }
+  }
+@media only screen and (min-width: 768px) {
+    figure{
+        display:block;
+    }
+}
+body {
+    background-image:linear-gradient(to left, pink, white);
+    background-repeat: repeat;
+  }
+*{
+    font-family: myFirstFont, serif;
+}
+#nav{
+    text-align: center;
+    width: 100dvw;
+    border: 2px solid;
+    background-color: skyblue;
+}
+h1{
+    color: #00a15c;
+}
+h2{
+    color: #006ba1;
+}
+video{
+    width:40%;
+    height:40%;
+}

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Kanit-Medium.ttf);
+}
+@media print{
+    audio{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    audio{
+        display: none;
+    }
+    
+    #projectss{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    #projectss{
+        width: 95% !important;
+    }
+  }
+@media only screen and (min-width: 768px) {
+    #projectss{
+        width: 90% !important;
+    }
+}
+body {
+    background-image:linear-gradient(to left, pink, white);
+    background-repeat: repeat;
+  }
+*{
+    font-family: myFirstFont, serif;
+}
+#nav{
+    width: 100dvw;
+    text-align: center;
+    border: 2px solid;
+    background-color: skyblue;
+}
+h1{
+    color: #00a15c;
+}
+h2{
+    color: #006ba1;
+}
+
+#projectss {
+    /* parent styles */
+    border-style: double;
+    padding: 10px;
+    & p {
+      /* child of parent styles */
+      margin: 20px;
+      border:1px solid;
+      background-color: aqua;
+    }
+  }

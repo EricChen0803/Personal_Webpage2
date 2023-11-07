@@ -1,0 +1,66 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Kanit-Medium.ttf);
+}
+@media print {
+    audio{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    audio{
+        display: none;
+    }
+    iframe{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    iframe{
+        width: 80% !important;
+    }
+  }
+@media only screen and (min-width: 768px) {
+    iframe{
+        width: 70%;
+    }
+}
+body {
+    background-image:linear-gradient(to left, pink, white);
+    background-repeat: repeat;
+}
+*{
+    font-family: myFirstFont, serif;
+}
+h1{
+    color: #00a15c;
+}
+h2{
+    color: #00a15c;
+}
+#page_title{
+    width:70%;
+    text-align: center;
+}
+#nav{
+    text-align: center;
+    width: 100dvw;
+    border: 2px solid;
+    background-color: skyblue;
+}
+#if{
+    background-color: aquamarine;
+    width: 70%;
+    height: 500px;
+}
+#selfii{
+    float: right;
+    width: 10%;
+    height: 10%;
+}
+#bgm{
+    float: right;
+}

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Kanit-Medium.ttf);
+}
+@media only screen and (max-width: 480px) {
+    audio{
+        display: none;
+    }
+    #svgpic{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    #svgpic{
+        display: none;
+    }
+  }
+@media only screen and (min-width: 768px) {
+    #svgpic{
+        display:flex;
+    }
+}
+@media print {
+    audio{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+}
+body {
+    background-image:linear-gradient(to left, pink, white);
+    background-repeat: repeat;
+  }
+*{
+    font-family: myFirstFont, serif;
+}
+#nav{
+    text-align: center;
+    width: 100dvw;
+    border: 2px solid;
+    background-color: skyblue;
+}
+h1{
+    color: #00a15c;
+}
+h2{
+    color: #006ba1;
+}
+aside{
+    float: right;
+}
+#edu{
+    margin-left: 5%;
+}
+div:has(ul) {
+    color: color(display-p3 1 0 1 / 1);
+}
+li {
+    width:20%;
+    padding: 10px;
+
+  }
+  
+  li:nth-child(1) {
+    background-color: color-mix(in srgb, #34c9eb 0%, white);
+  }
+  
+  li:nth-child(2) {
+    background-color: color-mix(in srgb, #34c9eb 25%, white);
+  }
+  
+  li:nth-child(3) {
+    background-color: color-mix(in srgb, #34c9eb 50%, white);
+  }
+  
+  li:nth-child(4) {
+    background-color: color-mix(in srgb, #34c9eb 75%, white);
+  }
+  
+  li:nth-child(5) {
+    background-color: color-mix(in srgb, #34c9eb 100%, white);
+  }
+
+#svgpic{
+    width:50dvw;
+    height:50dvh;
+    transition: width 2s, height 2s;
+    transform: rotate(1deg);
+    animation-name: svg;
+    animation-duration: 4s;
+}
+#svgpic:hover {
+    width:60dvw;
+    height:60dvh;
+  }
+
+@keyframes svg {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 1;}
+}

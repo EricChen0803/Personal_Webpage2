@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact information</title>
+</head>
+<body>
+    <h1><em>Contact Information:</em></h1>
+    <p>858-333-0142</p>
+    <p>erchen@ucsd.edu</p>
+    <address>3969 Nobel Drive San Diego, CA, 92122</address>
+
+    <h2>Please contact me if you need more information!</h2>
+    <form>
+        <fieldset>
+            <legend>Contact Us:</legend>
+            <label for="name">Your name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="message">Your message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <label for="contact_method">Choose the way you want to be contacted: </label><br>
+            <input list="contact_methods" name="contact_method" id="contact_method">
+            <datalist id="contact_methods">
+                <option value="email">
+                <option value="telephone">
+            </datalist><br>
+            <label for="message_type">Please identify your type of message:</label><br>
+            <select name="message_type" id="message_type">
+                <optgroup label="Emergency">
+                    <option value="action_required">Action required</option>
+                    <option value="need_reply">Need reply</option>
+                    <option value="other">Other</option>
+                </optgroup>
+                <optgroup label="Non-emergency">
+                    <option value="interests">Have interests</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+        
+</body>
+</html>
